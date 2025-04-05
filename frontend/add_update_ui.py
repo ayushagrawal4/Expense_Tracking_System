@@ -3,7 +3,7 @@ from datetime import datetime
 import requests
 
 API_URL = "https://ayush-agrawal-expense-tracking-system.streamlit.app"
-
+# API_URL = "http://localhost:8501/"
 
 def add_update_tab():
     selected_date = st.date_input("Enter Date", datetime(2024, 8, 1), label_visibility="collapsed")

@@ -1,6 +1,6 @@
 import mysql.connector
 from contextlib import contextmanager
-from logging_setup import setup_logger
+from backend.logging_setup import setup_logger
 
 
 logger = setup_logger('db_helper')
@@ -67,3 +67,4 @@ if __name__ == "__main__":
     summary = fetch_expense_summary("2024-08-01", "2024-08-05")
     for record in summary:
         print(record)
+
